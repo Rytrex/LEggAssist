@@ -1,17 +1,17 @@
 function calcMG(x){
 	//Get user submitted information
-	var cAmt = document.getElementById(cAmt);
-	var cCdy = document.getElementById(cCdy);
-	var wAmt = document.getElementById(wAmt);
-	var wCdy = document.getElementById(wCdy);
-	var pAmt = document.getElementById(pAmt);
-	var pCdy = document.getElementById(pCdy);
-	var rAmt = document.getElementById(rAmt);
-	var rCdy = document.getElementById(rCdy);
-	var zAmt = document.getElementById(zAmt);
-	var zCdy = document.getElementById(zCdy);
-	var dAmt = document.getElementById(dAmt);
-	var dCdy = document.getElementById(dCdy);
+	var cAmt = document.getElementById('cAmt').value;
+	var cCdy = document.getElementById('cCdy').value;
+	var wAmt = document.getElementById('wAmt').value;
+	var wCdy = document.getElementById('wCdy').value;
+	var pAmt = document.getElementById('pAmt').value;
+	var pCdy = document.getElementById('pCdy').value;
+	var rAmt = document.getElementById('rAmt').value;
+	var rCdy = document.getElementById('rCdy').value;
+	var zAmt = document.getElementById('zAmt').value;
+	var zCdy = document.getElementById('zCdy').value;
+	var dAmt = document.getElementById('dAmt').value;
+	var dCdy = document.getElementById('dCdy').value;
 	//Calculate the recommended amounts
 	var r0 = grind(cAmt, cCdy, 12);
 	var r1 = grind(wAmt, wCdy, 12);
@@ -21,40 +21,40 @@ function calcMG(x){
 	var r5 = grind(dAmt, dCdy, 50);
 	//Set up result box before displaying
 	if(r0 < 0){
-		document.getElementById('caterpie').innerHTML = 'Catch ' + (-1 * r0);
+		document.getElementById('caterpie').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r0);
 	}
 	else{
-		document.getElementById('caterpie').innerHTML = 'Transfer ' + (-1 * r0);
+		document.getElementById('caterpie').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + (-1 * r0);
 	}
 	if(r1 < 0){
-		document.getElementById('weedle').innerHTML = 'Catch ' + (-1 * r1);
+		document.getElementById('weedle').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r1);
 	}
 	else{
-		document.getElementById('weedle').innerHTML = 'Transfer ' + r1;
+		document.getElementById('weedle').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r1;
 	}
 	if(r2 < 0){
-		document.getElementById('pidgey').innerHTML = 'Catch ' + (-1 * r2);
+		document.getElementById('pidgey').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r2);
 	}
 	else{
-		document.getElementById('pidgey').innerHTML = 'Transfer ' + r2;
+		document.getElementById('pidgey').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r2;
 	}
 	if(r3 < 0){
-		document.getElementById('rattata').innerHTML = 'Catch ' + (-1 * r3);
+		document.getElementById('rattata').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r3);
 	}
 	else{
-		document.getElementById('rattata').innerHTML = 'Transfer ' + r3;
+		document.getElementById('rattata').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r3;
 	}
 	if(r4 < 0){
-		document.getElementById('zubat').innerHTML = 'Catch ' + (-1 * r4);
+		document.getElementById('zubat').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r4);
 	}
 	else{
-		document.getElementById('zubat').innerHTML = 'Transfer ' + r4;
+		document.getElementById('zubat').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r4;
 	}
 	if(r5 < 0){
-		document.getElementById('drowzee').innerHTML = 'Catch ' + (-1 * r5);
+		document.getElementById('drowzee').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r5);
 	}
 	else{
-		document.getElementById('drowzee').innerHTML = 'Transfer ' + r5;
+		document.getElementById('drowzee').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r5;
 	}
 	//Display result box
 	document.getElementById('result').style.display = "block";
