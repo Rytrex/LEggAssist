@@ -1,4 +1,4 @@
-function calcMG(x){
+function calcMG(){
 	//Get user submitted information
 	var cAmt = document.getElementById('cAmt').value;
 	var cCdy = document.getElementById('cCdy').value;
@@ -56,8 +56,7 @@ function calcMG(x){
 	else{
 		document.getElementById('drowzee').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r5;
 	}
-	//Display result box
-	document.getElementById('result').style.display = "block";
+	//Display result box using button
 }
 
 function grind(amt, cdy, evo){

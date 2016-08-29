@@ -9,20 +9,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <style type="text/css">
+  body{
+	margin: 0;
+    background:url('http://i.imgur.com/7nCRR.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   #body{
-    padding:100px;
+    padding-top:100px;
   }
   #result{
-    padding:100px;
-    display:none;
-  }
-  #catch{
-	color:green;
-	font-style:italic;
-  }
-  #tran{
-	color:red;
-	font-weight:bold;
+    padding-top:100px;
   }
 </style>
 </head>
@@ -30,117 +29,119 @@
 
 <div class="container-fluid" id="body">
   <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Caterpie-->
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Caterpie-->
       <div class="jumbotron">
         <center><h3>Caterpie</h3>
-        <img src="https://silphassets.a.cdnify.io/img/pokemon/animated/caterpie.gif"></img></center></br>
+        <img src="http://www.serebii.net/pokemongo/pokemon/010.png" height="90"></img></center></br>
         <div class="input-group input-group-sm">
           <input type="text" class="form-control" placeholder="Candy" id="cCdy" />
-          <input type="text" class="form-control" placeholder="# of this Pokemon"id="cAmt" />
+          <input type="text" class="form-control" placeholder="# of Caterpie"id="cAmt" />
         </div>
       </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Weedle-->
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Weedle-->
       <div class="jumbotron">
         <center><h3>Weedle</h3>
-        <img src="https://silphassets.a.cdnify.io/img/pokemon/animated/weedle.gif"></img></center></br>
+        <img src="http://www.serebii.net/pokemongo/pokemon/013.png" height="90"></img></center></br>
         <div class="input-group input-group-sm">
           <input type="text" class="form-control" placeholder="Candy"id="wCdy" />
-          <input type="text" class="form-control" placeholder="# of this Pokemon"id="wAmt" />
+          <input type="text" class="form-control" placeholder="# of Weedle"id="wAmt" />
         </div>
       </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Pidgy-->
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Pidgy-->
       <div class="jumbotron">
         <center><h3>Pidgey</h3>
-        <img src="https://silphassets.a.cdnify.io/img/pokemon/animated/pidgey.gif"></img></center></br>
+        <img src="http://www.serebii.net/pokemongo/pokemon/016.png" height="90"></img></center></br>
         <div class="input-group input-group-sm">
           <input type="text" class="form-control" placeholder="Candy"id="pCdy" />
-          <input type="text" class="form-control" placeholder="# of this Pokemon"id="pAmt" />
+          <input type="text" class="form-control" placeholder="# of Pidgey"id="pAmt" />
         </div>
       </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Rattata-->
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Rattata-->
       <div class="jumbotron">
         <center><h3>Rattata</h3>
-        <img src="https://silphassets.a.cdnify.io/img/pokemon/animated/rattata.gif"></img></center></br>
+        <img src="http://www.serebii.net/pokemongo/pokemon/019.png" height="90"></img></center></br>
         <div class="input-group input-group-sm">
           <input type="text" class="form-control" placeholder="Candy"id="rCdy" />
-          <input type="text" class="form-control" placeholder="# of this Pokemon"id="rAmt" />
+          <input type="text" class="form-control" placeholder="# of Rattata"id="rAmt" />
         </div>
       </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Zubat-->
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Zubat-->
       <div class="jumbotron">
         <center><h3>Zubat</h3>
-        <img src="https://silphassets.a.cdnify.io/img/pokemon/animated/zubat.gif"></img></center></br>
+        <img src="http://www.serebii.net/pokemongo/pokemon/041.png" height="90"></img></center></br>
         <div class="input-group input-group-sm">
           <input type="text" class="form-control" placeholder="Candy"id="zCdy" />
-          <input type="text" class="form-control" placeholder="# of this Pokemon"id="zAmt" />
+          <input type="text" class="form-control" placeholder="# of Zubat"id="zAmt" />
         </div>
       </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Drowzee-->
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Drowzee-->
       <div class="jumbotron">
         <center><h3>Drowzee</h3>
-        <img src="https://silphassets.a.cdnify.io/img/pokemon/animated/drowzee.gif"></img></center></br>
+        <img src="http://www.serebii.net/pokemongo/pokemon/096.png" height="90"></img></center></br>
         <div class="input-group input-group-sm">
           <input type="text" class="form-control" placeholder="Candy"id="dCdy" />
-          <input type="text" class="form-control" placeholder="# of this Pokemon"id="dAmt" />
+          <input type="text" class="form-control" placeholder="# of Drowzee"id="dAmt" />
         </div>
       </div>
     </div>
   </div>
-  <center><a class="btn btn-primary" href="#" role="button" onclick="calcMG('x')">Submit</a></center>
+  <center><a class="btn btn-primary" href="#result" onclick="calcMG()" data-toggle="collapse">Submit</a></center>
 </div>
 
-<div class="container-fluid" id="result"><!--Result Box-->
-  <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Caterpie-->
-      <div class="jumbotron">
-        <center><h3>Caterpie</h3>
-        <div id="caterpie">
-          
+<div class="container-fluid"><!--Result Box-->
+  <div class="collapse" id="result">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Caterpie-->
+        <div class="jumbotron">
+          <center><h3>Caterpie</h3>
+          <div id="caterpie">
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Weedle-->
-      <div class="jumbotron">
-        <center><h3>Weedle</h3>
-        <div id="weedle">
-          
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Weedle-->
+        <div class="jumbotron">
+          <center><h3>Weedle</h3>
+          <div id="weedle">
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Pidgy-->
-      <div class="jumbotron">
-        <center><h3>Pidgey</h3>
-        <div id="pidgey">
-          
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Pidgy-->
+        <div class="jumbotron">
+          <center><h3>Pidgey</h3>
+          <div id="pidgey">
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Rattata-->
-      <div class="jumbotron">
-        <center><h3>Rattata</h3>
-        <div id="rattata">
-          
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Rattata-->
+        <div class="jumbotron">
+          <center><h3>Rattata</h3>
+          <div id="rattata">
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Zubat-->
-      <div class="jumbotron">
-        <center><h3>Zubat</h3>
-        <div id="zubat">
-          
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Zubat-->
+        <div class="jumbotron">
+          <center><h3>Zubat</h3>
+          <div id="zubat">
+            
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Drowzee-->
-      <div class="jumbotron">
-        <center><h3>Drowzee</h3>
-        <div id="drowzee">
-          
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Drowzee-->
+        <div class="jumbotron">
+          <center><h3>Drowzee</h3>
+          <div id="drowzee">
+            
+          </div>
         </div>
       </div>
     </div>
