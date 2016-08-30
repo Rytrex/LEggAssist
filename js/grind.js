@@ -13,12 +13,12 @@ function calcMG(){
 	var dAmt = document.getElementById('dAmt').value;
 	var dCdy = document.getElementById('dCdy').value;
 	//Calculate the recommended amounts
-	var r0 = grind(cAmt, cCdy, 12);
-	var r1 = grind(wAmt, wCdy, 12);
-	var r2 = grind(pAmt, pCdy, 12);
-	var r3 = grind(rAmt, rCdy, 25);
-	var r4 = grind(zAmt, zCdy, 50);
-	var r5 = grind(dAmt, dCdy, 50);
+	var r0 = grind(cAmt, cCdy, 11);
+	var r1 = grind(wAmt, wCdy, 11);
+	var r2 = grind(pAmt, pCdy, 11);
+	var r3 = grind(rAmt, rCdy, 24);
+	var r4 = grind(zAmt, zCdy, 49);
+	var r5 = grind(dAmt, dCdy, 49);
 	//Set up result box before displaying
 	if(r0 < 0){
 		document.getElementById('caterpie').innerHTML = '<div style="color:red; font-weight:bold;">Catch </div>' + (-1 * r0);
@@ -60,12 +60,5 @@ function calcMG(){
 }
 
 function grind(amt, cdy, evo){
-	result = amt - Math.floor(cdy/evo);
-	if(result < 0){
-		amt = amt - result;
-		cdy = cdy - result * 3;
-		inc = amt - Math.floor(cdy/evo);
-		if(inc < 0) result--;
-	}
-	return result;
+	return Math.ceil((cdy - ((amt * evo) + 1))/3);
 }
