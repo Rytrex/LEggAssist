@@ -1,2 +1,8 @@
-# Monster-Grinder
-Pokemon Evolution Calculator. This site will help you calculate how many Pokemon you can evolve and recommend you transfer X of each Pokemon before using your Lucky Egg.
+#L.Egg Assist
+This calculator was make to calculate whether or not you should transfer or catch more of a Pokemon before using your Lucky Egg to evolve Pokemon for experience.
+
+#Calculations
+This calculator uses the information you give to calculate a number which recommends you catch or transfer X Pokemon. The calculation is as follows: (Candy - (NumOfPokemon * (EvolutionAmount - 1) + 1)) / 3. This is because when you evolve a Pokemon, you get +1 Candy. The game treats that Pokemon as a transfer.
+
+#Who?
+This was made by Don Vo for personal use on the go. It is made public for everyone to use. If you have suggestions or questions, please leave an Issue or Message me here.
