@@ -56,8 +56,9 @@ function calcMG(){
 	else{
 		document.getElementById('drowzee').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r5;
 	}
-	//Display result box using button
-	document.getElementById('result').class = " ";
+	//Display result box
+	document.getElementById('result').style.display = "block";
+	
 }
 
 function grind(amt, cdy, evo){
