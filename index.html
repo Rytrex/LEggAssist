@@ -8,6 +8,7 @@
 <!--To add tab icon-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <style type="text/css">
   body{
 	margin: 0;
@@ -22,6 +23,7 @@
   }
   #result{
     padding-bottom:30px;
+    display:none;
   }
   .box{
 	background-color: rgba(0,0,0,0.5);
@@ -103,60 +105,59 @@
     </div>
   </div>
 </div>
-<center><a class="btn btn-primary btn-lg" href="#result" onclick="calcMG()" data-toggle="collapse" id="submit">Submit</a></center>
-<div class="container-fluid"><!--Result Box-->
-  <div class="collapse" id="result">
-    <div class="row">
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Caterpie-->
-        <div class="box">
-          <center><h3>Caterpie</h3>
-          <div id="caterpie">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Weedle-->
-        <div class="box">
-          <center><h3>Weedle</h3>
-          <div id="weedle">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Pidgy-->
-        <div class="box">
-          <center><h3>Pidgey</h3>
-          <div id="pidgey">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Rattata-->
-        <div class="box">
-          <center><h3>Rattata</h3>
-          <div id="rattata">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Zubat-->
-        <div class="box">
-          <center><h3>Zubat</h3>
-          <div id="zubat">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Drowzee-->
-        <div class="box">
-          <center><h3>Drowzee</h3>
-          <div id="drowzee">
-            
-          </div>
+<center><a class="btn btn-primary btn-lg" href="#result" onclick="calcMG()" id="submit">Submit</a></center>
+<div class="container-fluid w3-animate-opacity" id="result"><!--Result Box-->
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Caterpie-->
+      <div class="box">
+        <center><h3>Caterpie</h3>
+        <div id="caterpie">
+          
         </div>
       </div>
     </div>
-  </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Weedle-->
+      <div class="box">
+        <center><h3>Weedle</h3>
+        <div id="weedle">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Pidgy-->
+      <div class="box">
+        <center><h3>Pidgey</h3>
+        <div id="pidgey">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Rattata-->
+      <div class="box">
+        <center><h3>Rattata</h3>
+        <div id="rattata">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Zubat-->
+      <div class="box">
+        <center><h3>Zubat</h3>
+        <div id="zubat">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Drowzee-->
+      <div class="box">
+        <center><h3>Drowzee</h3>
+        <div id="drowzee">
+          
+        </div>
+      </div>
+    </div>
+   </div>
+
 </div>
 
 </body>
