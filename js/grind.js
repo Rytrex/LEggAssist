@@ -57,8 +57,12 @@ function calcMG(){
 		document.getElementById('drowzee').innerHTML = '<div style="color:lightgreen; font-style:italic;">Transfer </div>' + r5;
 	}
 	//Display result box using button
+	document.getElementById('result').class = " ";
 }
 
 function grind(amt, cdy, evo){
-	return Math.ceil((cdy - ((amt * evo) + 1))/3);
+	if(amt == 0 && cdy == 0) return 0;
+	var hold = (cdy - ((amt * evo) + 1))/3;
+	if(hold < 0) return Math.floor(hold);
+	else return Math.ceil(hold);
 }
