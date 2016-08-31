@@ -41,11 +41,17 @@
 	margin-bottom:30px;
 	border-radius:10px;
   }
-  #submit{
+  #sNorm, #sTran{
 	margin-bottom:30px;
   }
   #about{
     margin-top:15px;
+  }
+  i{
+    color:darkblue;
+  }
+  i:hover{
+    color:black;
   }
 </style>
 </head>
@@ -60,7 +66,7 @@
     </div>
   </div>
 </div>
-<div class="container-fluid w3-animate-opacity" id="body">
+<div class="container-fluid w3-animate-top" id="body">
   <div class="row">
     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6"><!--Caterpie-->
       <div class="box">
@@ -124,8 +130,17 @@
     </div>
   </div>
 </div>
-<center><a class="btn btn-primary btn-lg" href="#result" onclick="calcMG()" id="submit">Submit</a></center>
-<div class="container-fluid w3-animate-opacity" id="result"><!--Result Box-->
+<div class="w3-animate-opacity" id="norm" align="center" style="display:block;">
+  <a href="#" onclick="sBut('1')"><i class="fa fa-caret-left fa-3x"></i></a>
+  <a class="btn btn-primary btn-lg" href="#result" onclick="calcMG('0')" id="sNorm">Normal</a>
+  <a href="#" onclick="sBut('1')"><i class="fa fa-caret-right fa-3x"></i></a>
+</div>
+<div class="w3-animate-opacity" id="tran" align="center" style="display:none;">
+  <a href="#" onclick="sBut('0')"><i class="fa fa-caret-left fa-3x"></i></a>
+  <a class="btn btn-primary btn-lg" href="#result" onclick="calcMG('1')" id="sTran">Transfer</a>
+  <a href="#" onclick="sBut('0')"><i class="fa fa-caret-right fa-3x"></i></a>
+</div>
+<div class="container-fluid w3-animate-bottom" id="result"><!--Result Box-->
   <div class="row">
     <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><!--Caterpie-->
       <div class="box">
