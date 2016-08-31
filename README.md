@@ -2,7 +2,9 @@
 This calculator was make to calculate whether or not you should transfer or catch more of a Pokemon before using your Lucky Egg to evolve Pokemon for experience.
 
 #Calculations
-This calculator uses the information you give to calculate a number which recommends you catch or transfer X Pokemon. The calculation is as follows: (Candy - (NumOfPokemon * (EvolutionAmount - 1) + 1)) / 3. This is because when you evolve a Pokemon, you get +1 Candy. The game treats that Pokemon as a transfer. If the number is negative, the value above is floored; else, take it's ceiling.
+The Normal calculator uses the information you give to calculate a number which recommends you catch or transfer X Pokemon. The calculation is as follows: (Candy - (NumOfPokemon * (EvolutionAmount - 1) + 1)) / 3. This is because when you evolve a Pokemon, you get +1 Candy. The game treats that Pokemon as a transfer. If the number is negative, the value above is floored; else, take it's ceiling.
+
+The Transfer calculator uses the same methods, but has a different formula. The calculation is as follows: (Candy - (NumOfPokemon * (EvolutionAmount - 2) + 2)) / 3
 
 #Planned Updates
 ~~Some people transfer Pokemon as they are evolving. I want to add a toggle that will accomidate for that in the calculations.~~
